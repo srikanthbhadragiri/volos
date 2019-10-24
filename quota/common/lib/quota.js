@@ -64,7 +64,7 @@ function Quota(Spi, o) {
 
   if ('minute' === options.timeUnit) {
     options.timeInterval = MINUTE;
-    if (options.bufferSize && !options.bufferTimeout) { options.bufferTimeout = 5000; }
+    if (options.bufferSize && !options.bufferTimeout) { options.bufferTimeout = 10000; }
   } else if ('hour' === options.timeUnit) {
     options.timeInterval = HOUR;
   } else if ('day' === options.timeUnit) {
